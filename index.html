@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axel - Playable</title>
+    <style>
+        body {
+            background-color: #242526; /* Set background color */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Make the body fill the entire viewport height */
+            margin: 0; /* Remove default margin */
+        }
+        iframe {
+            border: none; /* Remove iframe border */
+            max-width: 100%; /* Ensure iframe doesn't exceed viewport width */
+            max-height: 100%; /* Ensure iframe doesn't exceed viewport height */
+        }
+    </style>
 </head>
 <body>
     <!-- Embedding the game using an iframe -->
-    <iframe src="http://127.0.0.1:51264/index.html" width=3200 height=2400 frameborder="0"></iframe>
+    <iframe src="http://127.0.0.1:51264/index.html" width="800" height="600"></iframe>
 </body>
 </html>
