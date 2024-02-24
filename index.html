@@ -8,20 +8,29 @@
         body {
             background-color: #242526; /* Set background color */
             display: flex;
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
+            flex-direction: column; /* Arrange content in a column */
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
             height: 100vh; /* Make the body fill the entire viewport height */
             margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Set font family */
+            color: white; /* Set text color */
+        }
+        h1 {
+            font-weight: bold; /* Set font weight to bold */
+            font-size: 24px; /* Set font size */
+            margin-bottom: 20px; /* Add some spacing below the text */
         }
         iframe {
             border: none; /* Remove iframe border */
             max-width: 100%; /* Ensure iframe doesn't exceed viewport width */
-            max-height: 100%; /* Ensure iframe doesn't exceed viewport height */
+            max-height: calc(100vh - 40px); /* Ensure iframe doesn't exceed viewport height minus the space taken by the text */
         }
     </style>
 </head>
 <body>
+    <h1>Axel - Playable</h1> <!-- Bold text above the game -->
     <!-- Embedding the game using an iframe -->
-    <iframe src="http://127.0.0.1:51264/index.html" width="800" height="600"></iframe>
+    <iframe src="http://127.0.0.1:51264/index.html" width="1600" height="1200"></iframe>
 </body>
 </html>
